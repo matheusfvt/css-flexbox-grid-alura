@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>HZC | Home</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap" />
+        <link rel="stylesheet" href="assets/css/reset.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+    </head>
+    <body>
+        <header>
+            <button class="header-botao-menu" aria-label="Menu"><i></i></button>
+            <img src="assets/img/logo.svg" alt="Logo HZC" class="header-logo" />
+            <p class="header-perfil">Matheus Favaretto</p>
+            <button class="header-botao-not" aria-label="Notificação"><i></i></button>
+        </header>
+        <nav class="menu-lateral">
+            <img src="assets/img/logo.svg" alt="Logo HZC" class="menu-lateral-logo" />
+            <a href="#" class="menu-lateral-link menu-lateral-link--inicio">Início</a>
+            <a href="#" class="menu-lateral-link menu-lateral-link--video">Vídeo</a>
+            <a href="#" class="menu-lateral-link menu-lateral-link--picos">Picos</a>
+            <a href="#" class="menu-lateral-link menu-lateral-link--integrantes">Integrantes</a>
+            <a href="#" class="menu-lateral-link menu-lateral-link--camisas">Camisas</a>
+            <a href="#" class="menu-lateral-link menu-lateral-link--pinturas">Pinturas</a>
+        </nav>
+        <main class="principal">
+            <h2 class="titulo-pagina">Início</h2>
+            <!-- video em destaque -->
+            <article class="cartao cartao--destaque video-destaque">
+                <img src="assets/img/banner-mobile_1.png" alt="Banner do cartão" class="cartao-imagem cartao-imagem-mobile" />
+                <img src="assets/img/banner_1.png" alt="Banner do cartão" class="cartao-imagem cartao-imagem-desktop" />
+                <div class="cartao-conteudo">
+                    <p class="cartao-destaque">Vídeo em Destaque</p>
+                    <h3 class="cartao-titulo">HZC - Título</h3>
+                    <p class="cartao-perfil">Bruno Lopez</p>
+                    <p class="cartao-info cartao-info--tempo">33 minutos</p>
+                    <p class="cartao-info cartao-info--visualizacao">53 visualizações</p>
+                    <button class="cartao-botao cartao-botao--play cartao-botao--destaque">Assistir agora</button>
+                </div>
+            </article>
+            <!-- lista dos videos recentes -->
+            <article class="cartao cartao-recentes video-recentes">
+                <h3 class="cartao-recentes-titulo">Vídeos recentes</h3>
+                <a href="#" class="cartao-recentes-link">Ver todos</a>
+                <ul class="cartao-recentes-lista">
+                    <li class="cartao-recentes-item">
+                        <img src="assets/img/miniatura_1.png" alt="Thumbnail do vídeo" class="cartao-recentes-item-thumbnail" />
+                        <h4 class="cartao-recentes-item-titulo">HZC - Love Machine</h4>
+                        <p class="cartao-recentes-item-perfil">Matheus Favaretto</p>
+                    </li>
+                </ul>
+                <ul class="cartao-recentes-lista">
+                    <li class="cartao-recentes-item">
+                        <img src="assets/img/miniatura_2.png" alt="Thumbnail do vídeo" class="cartao-recentes-item-thumbnail" />
+                        <h4 class="cartao-recentes-item-titulo">HZC - Vol. 3</h4>
+                        <p class="cartao-recentes-item-perfil">Matheus Favaretto</p>
+                    </li>
+                </ul>
+                <ul class="cartao-recentes-lista">
+                    <li class="cartao-recentes-item">
+                        <img src="assets/img/miniatura_3.png" alt="Thumbnail do vídeo" class="cartao-recentes-item-thumbnail" />
+                        <h4 class="cartao-recentes-item-titulo">HZC - Pescaria na Urca</h4>
+                        <p class="cartao-recentes-item-perfil">Matheus Favaretto</p>
+                    </li>
+                </ul>
+                <ul class="cartao-recentes-lista">
+                    <li class="cartao-recentes-item">
+                        <img src="assets/img/miniatura_4.png" alt="Thumbnail do vídeo" class="cartao-recentes-item-thumbnail" />
+                        <h4 class="cartao-recentes-item-titulo">Vidalocagi - Guerreiros do Asfalto</h4>
+                        <p class="cartao-recentes-item-perfil">Matheus Favaretto</p>
+                    </li>
+                </ul>
+                <ul class="cartao-recentes-lista">
+                    <li class="cartao-recentes-item">
+                        <img src="assets/img/miniatura_5.png" alt="Thumbnail do vídeo" class="cartao-recentes-item-thumbnail" />
+                        <h4 class="cartao-recentes-item-titulo">Vidalocagi - Não importa o nível</h4>
+                        <p class="cartao-recentes-item-perfil">Matheus Favaretto</p>
+                    </li>
+                </ul>
+            </article>
+            <!-- cartoes dos videos mais vistos -->
+            <section class="cartoes cartoes-videos">
+                <h3 class="titulo-cartoes">Vídeos mais vistos</h3>
+                <article class="cartao">
+                    <img src="assets/img/video_1.png" alt="Vídeo do cartão" class="cartao-imagem" />
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">André Soares</p>
+                        <h3 class="cartao-titulo">HZC - Tudo sem Padrin</h3>
+                        <p class="cartao-info cartao-info--tempo">33 minutos</p>
+                        <button class="cartao-botao cartao-botao--play" aria-label="Assistir Agora"></button>
+                    </div>
+                </article>
+                <article class="cartao">
+                    <img src="assets/img/video_2.png" alt="Vídeo do cartão" class="cartao-imagem" />
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">Bruno Lopez</p>
+                        <h3 class="cartao-titulo">HZC - Enter The Hu-flez</h3>
+                        <p class="cartao-info cartao-info--tempo">33 minutos</p>
+                        <button class="cartao-botao cartao-botao--play" aria-label="Assistir Agora"></button>
+                    </div>
+                </article>
+                <article class="cartao">
+                    <img src="assets/img/video_3.png" alt="Vídeo do cartão" class="cartao-imagem" />
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">Matheus Favaretto</p>
+                        <h3 class="cartao-titulo">HZC - Vol. 3</h3>
+                        <p class="cartao-info cartao-info--tempo">33 minutos</p>
+                        <button class="cartao-botao cartao-botao--play" aria-label="Assistir Agora"></button>
+                    </div>
+                </article>
+                <article class="cartao">
+                    <img src="assets/img/video_4.png" alt="Vídeo do cartão" class="cartao-imagem" />
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">Bruno Lopes</p>
+                        <h3 class="cartao-titulo">HZC - Love Machine</h3>
+                        <p class="cartao-info cartao-info--tempo">33 minutos</p>
+                        <button class="cartao-botao cartao-botao--play" aria-label="Assistir Agora"></button>
+                    </div>
+                </article>
+            </section>
+            <!-- arte em destaque -->
+            <article class="cartao cartao--destaque artes-destaque">
+                <img src="assets/img/banner-mobile_2.png" alt="Banner da arte em destaque" class="cartao-imagem cartao-imagem-mobile" />
+                <img src="assets/img/banner_2.png" alt="Banner da arte em destaque" class="cartao-imagem cartao-imagem-desktop" />
+                <div class="cartao-conteudo">
+                    <p class="cartao-destaque">Nova arte</p>
+                    <h3 class="cartao-titulo">Only Zikas - Lagoa Dompa Club</h3>
+                    <p class="cartao-perfil">João ZMS</p>
+                    <p class="cartao-info cartao-info--dinheiro">33,33</p>
+                    <p class="cartao-info cartao-info--visualizacao">53 visualizações</p>
+                    <button class="cartao-botao cartao-botao--comprar cartao-botao--destaque">Comprar Agora</button>
+                </div>
+            </article>
+            <!-- lista das artes recentes -->
+            <article class="cartao cartao-recentes artes-recentes">
+                <h3 class="cartao-recentes-titulo">Novas Artes</h3>
+                <a href="#" class="cartao-recentes-link">Ver todas</a>
+                <ul class="cartao-recentes-lista">
+                    <li class="cartao-recentes-item">
+                        <img src="assets/img/miniatura_1.png" alt="Miniatura da arte" class="cartao-recentes-item-thumbnail" />
+                        <h4 class="cartao-recentes-item-titulo">Sem título 01</h4>
+                        <p class="cartao-recentes-item-perfil">Antonio Tebyriçá</p>
+                    </li>
+                </ul>
+                <ul class="cartao-recentes-lista">
+                    <li class="cartao-recentes-item">
+                        <img src="assets/img/Rectangle 97.png" alt="Miniatura da arte" class="cartao-recentes-item-thumbnail" />
+                        <h4 class="cartao-recentes-item-titulo">Sem título 02</h4>
+                        <p class="cartao-recentes-item-perfil">Antonio Tebyriçá</p>
+                    </li>
+                </ul>
+                <ul class="cartao-recentes-lista">
+                    <li class="cartao-recentes-item">
+                        <img src="assets/img/Rectangle 97-1.png" alt="Miniatura da arte" class="cartao-recentes-item-thumbnail" />
+                        <h4 class="cartao-recentes-item-titulo">Segurança</h4>
+                        <p class="cartao-recentes-item-perfil">Raphael Gibson</p>
+                    </li>
+                </ul>
+                <ul class="cartao-recentes-lista">
+                    <li class="cartao-recentes-item">
+                        <img src="assets/img/Rectangle 97-2.png" alt="Miniatura da arte" class="cartao-recentes-item-thumbnail" />
+                        <h4 class="cartao-recentes-item-titulo">Malunguisse</h4>
+                        <p class="cartao-recentes-item-perfil">Carolina Canavarro</p>
+                    </li>
+                </ul>
+                <ul class="cartao-recentes-lista">
+                    <li class="cartao-recentes-item">
+                        <img src="assets/img/Rectangle 97-3.png" alt="Miniatura da arte" class="cartao-recentes-item-thumbnail" />
+                        <h4 class="cartao-recentes-item-titulo">Coroa da converse</h4>
+                        <p class="cartao-recentes-item-perfil">Nikolas de Murtas</p>
+                    </li>
+                </ul>
+                <ul class="cartao-recentes-lista">
+                    <li class="cartao-recentes-item">
+                        <img src="assets/img/Rectangle 97-4.png" alt="Miniatura da arte" class="cartao-recentes-item-thumbnail" />
+                        <h4 class="cartao-recentes-item-titulo">Segurança</h4>
+                        <p class="cartao-recentes-item-perfil">Raphael Gibson</p>
+                    </li>
+                </ul>
+                <ul class="cartao-recentes-lista">
+                    <li class="cartao-recentes-item">
+                        <img src="assets/img/Rectangle 97.png" alt="Miniatura da arte" class="cartao-recentes-item-thumbnail" />
+                        <h4 class="cartao-recentes-item-titulo">Sem título 03</h4>
+                        <p class="cartao-recentes-item-perfil">Antonio Tebyriçá</p>
+                    </li>
+                </ul>
+            </article>
+            <!-- cartoes das camisas mais recentes -->
+            <section class="cartoes cartoes-camisas">
+                <h3 class="titulo-cartoes">Camisas mais recentes</h3>
+                <article class="cartao">
+                    <img src="assets/img/produto_1.png" alt="Imagem da camisa" class="cartao-imagem" />
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">André Soares</p>
+                        <h3 class="cartao-titulo">IBM</h3>
+                        <p class="cartao-info cartao-info--dinheiro">33,33</p>
+                        <button class="cartao-botao cartao-botao--comprar" aria-label="Assistir Agora"></button>
+                    </div>
+                </article>
+                <article class="cartao">
+                    <img src="assets/img/produto_2.png" alt="Imagem da camisa" class="cartao-imagem" />
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">Bruno Lopes</p>
+                        <h3 class="cartao-titulo">Huflez Crew Philosophy Club</h3>
+                        <p class="cartao-info cartao-info--dinheiro">33,33</p>
+                        <button class="cartao-botao cartao-botao--comprar" aria-label="Assistir Agora"></button>
+                    </div>
+                </article>
+                <article class="cartao">
+                    <img src="assets/img/produto_3.png" alt="Imagem da camisa" class="cartao-imagem" />
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">Luiza Sampaio</p>
+                        <h3 class="cartao-titulo">Corujita noturna</h3>
+                        <p class="cartao-info cartao-info--dinheiro">33,33</p>
+                        <button class="cartao-botao cartao-botao--comprar" aria-label="Assistir Agora"></button>
+                    </div>
+                </article>
+                <article class="cartao">
+                    <img src="assets/img/produto_4.png" alt="Imagem da camisa" class="cartao-imagem" />
+                    <div class="cartao-conteudo">
+                        <p class="cartao-perfil">Bruno Lopes</p>
+                        <h3 class="cartao-titulo">GGG - Gatin G Gorro</h3>
+                        <p class="cartao-info cartao-info--dinheiro">33,33</p>
+                        <button class="cartao-botao cartao-botao--comprar cartao-botao-mini" aria-label="Assistir Agora"></button>
+                    </div>
+                </article>
+            </section>
+        </main>
+    </body>
+    <script src="index.js"></script>
+</html>

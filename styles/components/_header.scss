@@ -1,0 +1,140 @@
+@import "../abstract/variaveis";
+
+header {
+    background-color: #15191c;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: $sombras;
+    padding: 8px 16px;
+    .header-botao-menu i::before {
+        content: "\e904";
+        font-size: 24px;
+    }
+    .header-botao-not i::before {
+        content: "\e906";
+        font-size: 24px;
+    }
+    .header-logo {
+        width: 40px;
+    }
+}
+
+.menu-lateral {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    background-color: #15191c;
+    width: 75vw;
+    height: 100vh;
+    transition: 0.25s;
+    position: absolute;
+    left: -100vw;
+
+    .menu-lateral-logo {
+        width: 118px;
+        align-self: center;
+        padding: 16px;
+    }
+    .menu-lateral-link {
+        height: 64px;
+        color: $cor-fonte-alt;
+        padding-left: 64px;
+        display: flex;
+        align-items: center;
+    }
+    .menu-lateral-link::before {
+        content: "";
+        width: 24px;
+        height: 24px;
+        font-size: 24px;
+        position: absolute;
+        left: 24px;
+    }
+
+    .menu-lateral-link:hover {
+        color: $cor-fonte;
+        border-left: 8px solid;
+        padding-left: 56px;
+    }
+
+    .menu-lateral-link--inicio::before {
+        content: "\e902";
+    }
+
+    .menu-lateral-link--video::before {
+        content: "\e90e";
+    }
+
+    .menu-lateral-link--picos::before {
+        content: "\e909";
+    }
+
+    .menu-lateral-link--integrantes::before {
+        content: "\e903";
+    }
+
+    .menu-lateral-link--camisas::before {
+        content: "\e900";
+    }
+
+    .menu-lateral-link--pinturas::before {
+        content: "\e90a";
+    }
+}
+
+.menu-lateral-ativo {
+    left: 0;
+    transition: 0.25s;
+}
+
+@media (min-width:700px){
+    header{
+        background-color: #1D232A;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        padding: 16px 60px;
+        height: 80px;
+        box-sizing: border-box;
+        column-gap: 32px;
+        grid-column: 2;
+        .header-botao-menu{
+            display: none;
+        }
+        .header-logo{
+            display: none;
+        }
+        .header-perfil{
+            display: grid;
+            grid-template-columns: repeat(3, auto);
+            column-gap: 8px;
+            align-items: center;
+            justify-self: flex-end;
+            color: $cor-fonte-alt;
+            padding: 8px 32px;
+            border-right: 1px solid $cor-fonte-alt;
+            &::before{
+                content: '';
+                display: block;
+                width: 32px;
+                height: 32px;
+                background-image: url('../assets/img/profile_2.png');
+                background-size: contain;
+                background-repeat: no-repeat;
+                background-position: center;
+            }
+            &::after{
+                content: '\e90d';
+                color: $cor-fonte;
+                font-size: 1.5rem;
+            }
+        }
+    }
+    .menu-lateral{
+        position: static;
+        width: 200px;
+        grid-column: 1;
+        grid-row: 1 / span 2;
+    }
+
+}

@@ -1,0 +1,211 @@
+@import "../abstract/variaveis";
+
+.cartao-imagem-desktop {
+    display: none;
+}
+.header-perfil {
+    display: none;
+}
+
+.principal {
+    padding: 24px $padding-body;
+    display: grid;
+    gap: 16px;
+    .titulo-pagina {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin-bottom: $margin-titulo;
+    }
+    .cartao--destaque {
+        margin-bottom: 16px;
+    }
+    .cartao {
+        width: 100%;
+        border-radius: 15px;
+        overflow: hidden;
+        background-color: $cor-cartao;
+        .cartao-conteudo {
+            padding: $padding-body;
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 8px;
+            .cartao-destaque {
+                grid-column: span 2;
+                font-size: 0.9rem;
+            }
+            .cartao-titulo {
+                font-size: 1.2rem;
+                font-weight: 700;
+                grid-column: span 2;
+            }
+            .cartao-perfil {
+                color: $cor-fonte-alt;
+                font-size: 0.9rem;
+                grid-column: span 2;
+            }
+            .cartao-info {
+                display: flex;
+                align-items: center;
+                color: $cor-fonte-alt;
+            }
+            .cartao-info--tempo::before {
+                content: "\e90c";
+                margin-right: 8px;
+            }
+
+            .cartao-info--visualizacao::before {
+                content: "\e90f";
+                margin-right: 8px;
+            }
+            .cartao-botao {
+                display: flex;
+                justify-content: center;
+                background-color: $cor-botao;
+                width: 40px;
+                height: 40px;
+                font-size: 0.9rem;
+                border-radius: 10px;
+                padding: $padding-botao;
+                cursor: pointer;
+            }
+            .cartao-botao--play::before {
+                content: "\e90b";
+                font-size: 20px;
+            }
+            .cartao-botao--destaque {
+                width: 100%;
+                grid-column: span 2;
+                align-items: center;
+            }
+            .cartao-botao--destaque::before {
+                margin-right: 8px;
+            }
+        }
+    }
+    .cartoes {
+        gap: 16px;
+        display: grid;
+        .titulo-cartoes {
+            font-size: 1.1rem;
+            font-weight: 700;
+        }
+        .cartao-botao {
+            justify-self: right;
+        }
+    }
+}
+
+.cartao-recentes {
+    display: none;
+}
+
+@media (min-width: 700px) {
+    .cartao-imagem-mobile {
+        display: none;
+    }
+    .cartao-imagem-desktop {
+        display: unset;
+    }
+    .principal .cartao .cartao-conteudo .cartao-botao--destaque{
+        grid-column: auto;
+        font-size: 1rem;
+        padding: 16px 8px;
+
+    }
+    .principal {
+        grid-template-columns: auto 1fr auto;
+        column-gap: 32px;
+        padding: 16px 60px;
+        grid-column: 2;
+        grid-template-areas:
+            "titulo-pagina titulo-pagina titulo-pagina"
+            "video-destaque video-destaque video-recentes"
+            "cartoes-videos cartoes-videos cartoes-videos"
+            "artes-recentes artes-destaque artes-destaque"
+            "cartoes-artes cartoes-artes cartoes-artes"
+            "cartoes-camisas cartoes-camisas cartoes-camisas";
+        .cartao-recentes {
+            display: grid;
+            grid-template-columns: auto auto;
+            align-items: center;
+            row-gap: 24px;
+            width: 256px;
+            padding: 16px;
+            align-self: flex-start;
+        }
+        .cartao-recentes .cartao-recentes-titulo {
+            grid-column: auto;
+        }
+        .cartao-recentes-link {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: $cor-links;
+            justify-self: flex-end;
+        }
+        .cartao-recentes-lista {
+            display: grid;
+            row-gap: 16px;
+            grid-column: span 2;
+            .cartao-recentes-item {
+                display: grid;
+                grid-template-columns: auto 1fr;
+                gap: 8px;
+                .cartao-recentes-item-thumbnail {
+                    grid-row: span 2;
+                    width: 32px;
+                }
+                .cartao-recentes-item-titulo {
+                    font-size: 0.9rem;
+                    line-height: 1.2rem;
+                    font-weight: 700;
+                }
+                .cartao-recentes-item-perfil {
+                    font-size: 0.8rem;
+                    color: $cor-fonte-alt;
+                }
+            }
+        }
+
+        .cartao-info--dinheiro::before {
+            content: "\e905";
+            margin-right: 8px;
+        }
+
+        .cartao-botao--comprar::before{
+            content: "\e901";
+            font-size: 20px;
+        }
+        .cartoes-videos, .cartoes-camisas{
+            grid-template-columns: repeat(4, 1fr);
+            .titulo-cartoes{
+                grid-column: span 4;
+            }
+        }
+
+        .titulo-pagina {
+            grid-area: titulo-pagina;
+            margin-bottom: 0;
+        }
+        .video-destaque {
+            grid-area: video-destaque;
+        }
+        .video-recentes {
+            grid-area: video-recentes;
+        }
+        .cartoes-videos {
+            grid-area: cartoes-videos;
+        }
+
+        .artes-destaque {
+            grid-area: artes-destaque;
+        }
+
+        .artes-recentes {
+            grid-area: artes-recentes;
+        }
+
+        .cartoes-camisas {
+            grid-area: cartoes-camisas;
+        }
+    }
+}

@@ -1,0 +1,23 @@
+@import "./variaveis";
+
+@font-face {
+  font-family: "icones";
+  src: url(../assets/font/icones.ttf);
+}
+
+html,
+body {
+  font-family: "Open Sans", "icones", sans-serif;
+}
+
+body {
+  background-color: #1d232a;
+  color: $cor-fonte;
+}
+
+@media (min-width:700px){
+  body{
+    display: grid;
+    grid-template-columns: auto 1fr;
+  }
+}
