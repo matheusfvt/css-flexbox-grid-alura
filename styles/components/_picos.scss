@@ -1,0 +1,16 @@
+@import "../abstract/variaveis";
+
+.cartao-botao--picos::before {
+    content: "\e909";
+    font-size: 20px;
+}
+
+.mapa-picos {
+    object-fit: cover;
+    height: 100%;
+}
+@media (max-width: 975px) {
+    .video-destaque {
+        min-height: 468px;
+    }
+}

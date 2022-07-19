@@ -98,7 +98,7 @@ header .header-logo {
   transition: 0.25s;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 975px) {
   header {
     background-color: #1D232A;
     display: grid;
@@ -185,10 +185,13 @@ header .header-logo {
 .principal .cartao .cartao-conteudo .cartao-destaque {
   grid-column: span 2;
   font-size: 0.9rem;
+  font-weight: 700;
+  line-height: 24px;
 }
 .principal .cartao .cartao-conteudo .cartao-titulo {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
   font-weight: 700;
+  line-height: 32px;
   grid-column: span 2;
 }
 .principal .cartao .cartao-conteudo .cartao-perfil {
@@ -237,7 +240,7 @@ header .header-logo {
   display: grid;
 }
 .principal .cartoes .titulo-cartoes {
-  font-size: 1.1rem;
+  font-size: 1.2rem;
   font-weight: 700;
 }
 .principal .cartoes .cartao-botao {
@@ -248,7 +251,7 @@ header .header-logo {
   display: none;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 975px) {
   .cartao-imagem-mobile {
     display: none;
   }
@@ -279,6 +282,9 @@ header .header-logo {
   }
   .principal .cartao-recentes .cartao-recentes-titulo {
     grid-column: auto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 24px;
   }
   .principal .cartao-recentes-link {
     font-size: 0.8rem;
@@ -317,10 +323,12 @@ header .header-logo {
     content: "\e901";
     font-size: 20px;
   }
-  .principal .cartoes-videos, .principal .cartoes-camisas {
+  .principal .cartoes-videos,
+.principal .cartoes-camisas {
     grid-template-columns: repeat(4, 1fr);
   }
-  .principal .cartoes-videos .titulo-cartoes, .principal .cartoes-camisas .titulo-cartoes {
+  .principal .cartoes-videos .titulo-cartoes,
+.principal .cartoes-camisas .titulo-cartoes {
     grid-column: span 4;
   }
   .principal .titulo-pagina {
@@ -344,5 +352,21 @@ header .header-logo {
   }
   .principal .cartoes-camisas {
     grid-area: cartoes-camisas;
+  }
+}
+.cartao-botao--picos::before {
+  content: "\e909";
+  font-size: 20px;
+}
+
+.mapa-picos {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+}
+
+@media (max-width: 975px) {
+  .video-destaque {
+    min-height: 468px;
   }
 }/*# sourceMappingURL=style.css.map */

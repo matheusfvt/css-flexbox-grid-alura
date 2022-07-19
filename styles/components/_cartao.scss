@@ -32,10 +32,13 @@
             .cartao-destaque {
                 grid-column: span 2;
                 font-size: 0.9rem;
+                font-weight: 700;
+                line-height: 24px;
             }
             .cartao-titulo {
-                font-size: 1.2rem;
+                font-size: 1.4rem;
                 font-weight: 700;
+                line-height: 32px;
                 grid-column: span 2;
             }
             .cartao-perfil {
@@ -86,7 +89,7 @@
         gap: 16px;
         display: grid;
         .titulo-cartoes {
-            font-size: 1.1rem;
+            font-size: 1.2rem;
             font-weight: 700;
         }
         .cartao-botao {
@@ -99,18 +102,17 @@
     display: none;
 }
 
-@media (min-width: 700px) {
+@media (min-width: 975px) {
     .cartao-imagem-mobile {
         display: none;
     }
     .cartao-imagem-desktop {
         display: unset;
     }
-    .principal .cartao .cartao-conteudo .cartao-botao--destaque{
+    .principal .cartao .cartao-conteudo .cartao-botao--destaque {
         grid-column: auto;
         font-size: 1rem;
         padding: 16px 8px;
-
     }
     .principal {
         grid-template-columns: auto 1fr auto;
@@ -135,6 +137,9 @@
         }
         .cartao-recentes .cartao-recentes-titulo {
             grid-column: auto;
+            font-size: 18px;
+            font-weight: 700;
+            line-height: 24px;
         }
         .cartao-recentes-link {
             font-size: 0.8rem;
@@ -171,13 +176,14 @@
             margin-right: 8px;
         }
 
-        .cartao-botao--comprar::before{
+        .cartao-botao--comprar::before {
             content: "\e901";
             font-size: 20px;
         }
-        .cartoes-videos, .cartoes-camisas{
+        .cartoes-videos,
+        .cartoes-camisas {
             grid-template-columns: repeat(4, 1fr);
-            .titulo-cartoes{
+            .titulo-cartoes {
                 grid-column: span 4;
             }
         }
